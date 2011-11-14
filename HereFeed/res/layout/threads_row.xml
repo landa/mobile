@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/message"
+	android:orientation="vertical" xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="wrap_content">
+	<LinearLayout android:orientation="horizontal"
+		android:layout_width="fill_parent" android:layout_height="wrap_content">
+		<LinearLayout android:layout_width="5dip"
+			android:layout_height="wrap_content" />
+		<TextView android:id="@+id/message_content"
+			android:textColor="#FCFFFF" android:textSize="20px"
+			android:layout_width="fill_parent" android:layout_height="wrap_content" />
+	</LinearLayout>
+	<LinearLayout android:orientation="horizontal" android:id="@+id/time_and_compass"
+		android:paddingLeft="5dip" android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+		<TextView android:id="@+id/thread_message_timestamp"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_gravity="left" android:textColor="#CCFFFFFF" />
+		<LinearLayout android:id="@+id/fill_vertical_space"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:layout_weight="1" />
+		<LinearLayout android:id="@+id/fill_vertical_space"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:layout_weight="1" />
+		<TextView android:id="@+id/message_picture"
+			android:textColor="#FF0000" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" />
+	</LinearLayout>
+</LinearLayout>

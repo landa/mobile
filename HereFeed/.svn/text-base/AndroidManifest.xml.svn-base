@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="edu.mit.people.landa.secretmessages" android:versionCode="1"
+	android:versionName="1.0">
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+	<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+	<uses-permission android:name="android.permission.VIBRATE" />
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+	<uses-permission android:name="android.permission.CAMERA" />
+	<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+	<application android:icon="@drawable/icon" android:label="@string/app_name"
+		android:theme="@android:style/Theme.Light" android:name="Terranota">
+		<uses-library android:name="com.google.android.maps" />
+		<activity android:name=".SecretMessages" android:label="@string/app_name">
+		</activity>
+		<activity android:name=".ComposeMessage" android:label="@string/compose_message">
+		</activity>
+		<activity android:name=".PostMessage" android:label="@string/post_message">
+		</activity>
+		<activity android:name=".LandmarkSettings" android:label="@string/landmark_settings">
+		</activity>
+		<activity android:name=".Feed" android:label="@string/feed">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+		<service android:name=".LandmarkService" android:label="TerranotaService"
+			android:enabled="true" android:exported="true" android:process=":serv">
+		</service>
+		<activity android:name=".ViewThread"></activity>
+		<receiver android:name=".LandmarkBootBroadcastReceiver"
+			android:enabled="true">
+			<intent-filter>
+				<action android:name="android.intent.action.BOOT_COMPLETED" />
+			</intent-filter>
+		</receiver>
+	<activity android:name=".ViewImage"></activity>
+</application>
+	<uses-sdk android:minSdkVersion="3" />
+</manifest>

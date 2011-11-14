@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string name="app_name">HereFeed</string>
+<string name="default_prompt">Type the content of your post here</string>
+<string name="post_message">HereFeed | Review your post</string>
+<string name="compose_message">HereFeed | Compose your message</string>
+
+<string name="landmark_settings">HereFeed | Configure your preferences</string>
+<string name="empty_list">No messages have been discovered yet.\n\nAs soon as you walk by a message, your phone will notify you and the message will be added to this feed.\n\nMeanwhile you can post a new message!</string>
+<string name="menu_prefs">Change your preferences</string>
+<string name="view_image">HereFeed | View message image</string>
+<string name="prefs_service">Look for messages using my location</string>
+<string name="prefs_power">Don't look if my battery has less than 50% charge left</string>
+<string name="prefs_vibrate">Vibrate when a message arrives</string>
+<string name="prefs_clear">Clear existing messages from feed</string>
+<string name="prefs_battery_tip">HereFeed tries to conserve power as much as possible. However, if you would like more control, it is recommended that you install Locale, which lets you do things like schedule the GPS to turn off at night.</string>
+<string name="welcome_explanation">HereFeed provides you with nearby user-generated content. As you walk around, HereFeed will detect messages left by other people and alert you about their presence.\n\nLost your pet? Alert your neighborhood with a picture post.\nLove to sail? Leave a message in the middle of the river that only other sailors will see!\n\nHereFeed supports coversations (replies using threads), attaching images to posts, and is a good citizen (it tries to use the battery intelligently). Please note, however, that it comes with no guarantee whatsoever. By using this application, you agree not to post any illegal or offensive content.\n\nEnjoy!    - Yafim,   landa@mit.edu\n                 www.herefeed.com</string>
+
+</resources>

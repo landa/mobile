@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<com.google.android.maps.MapView
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		android:id="@+id/mapview" android:apiKey="0zzxfdf8qC9hQFTyPplaPN1KDa8SgcfcjA2Xqng" />
+	<LinearLayout android:id="@+id/zoomview"
+		android:orientation="vertical" android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:layout_alignTop="@id/mapview"
+		android:layout_centerHorizontal="true" android:background="#AA000000"
+		android:padding="10px" android:scrollbars="vertical">
+		<ListView android:id="@+id/content_display"
+			android:background="@android:color/transparent" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" />
+		<LinearLayout android:id="@+id/fill_vertical_space" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:layout_weight="1" />
+		<Button android:id="@+id/reply" android:text="Reply to This Thread"
+			android:layout_gravity="right" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:textColor="#222255" />
+	</LinearLayout>
+</RelativeLayout>

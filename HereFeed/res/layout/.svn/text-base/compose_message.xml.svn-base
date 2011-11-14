@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<EditText android:text="@string/default_prompt" android:id="@+id/text_content"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:layout_weight="1"></EditText>
+	<TextView android:text="Would you like to attach a picture?"
+		android:id="@+id/pic" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:layout_gravity="center_horizontal"></TextView>
+	<LinearLayout android:orientation="horizontal"
+		android:gravity="center_horizontal" android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+		<Button android:text="From gallery" android:id="@+id/pic_choose"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+		<Button android:text="Snap one now" android:id="@+id/pic_capture"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+		<Button android:text="Remove picture" android:id="@+id/pic_remove"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:visibility="gone"></Button>
+	</LinearLayout>
+	<Button android:id="@+id/post" android:text="Next >>"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:textColor="#222255" />
+</LinearLayout>

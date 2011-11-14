@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<com.google.android.maps.MapView
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		android:clickable="true" android:id="@+id/mapview"
+		android:apiKey="0zzxfdf8qC9hQFTyPplaPN1KDa8SgcfcjA2Xqng" />
+	<LinearLayout android:id="@+id/zoomview"
+		android:orientation="vertical" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:layout_alignTop="@id/mapview"
+		android:layout_centerHorizontal="true" android:background="#CC000000"
+		android:padding="10px">
+		<TextView android:id="@+id/reply_content" android:visibility="gone"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:textColor="#88FFFFFF" android:textSize="18px"
+			android:paddingBottom="20px" />
+		<TextView android:id="@+id/content_display"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:textColor="#CCFFFFFF" android:textSize="20px"
+			android:paddingBottom="10px" />
+		<Button android:id="@+id/save_post" android:text="Create"
+			android:layout_gravity="right" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:textColor="#222255" />
+	</LinearLayout>
+</RelativeLayout>
